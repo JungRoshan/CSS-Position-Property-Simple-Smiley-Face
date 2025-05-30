@@ -28,8 +28,6 @@ Focused on different CSS `position` values and created a simple smiley face usin
 - `fixed` stays fixed relative to the viewport regardless of scrolling.  
 - Combining positioning with shape and color properties can create fun UI elements.
 
----
 
-### Example CSS for Positioning Demo
 
 
