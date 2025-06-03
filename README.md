@@ -1,27 +1,29 @@
-<div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
+<div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; border: 1px solid #ddd; font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;">
 
-# CSS Flexbox (align-items)
+# Flexbox `align-content`
 
-Today I explored the power of `align-items` in Flexbox layouts, focusing specifically on bottom-alignment behavior.
+## Understanding `align-content: flex-end`
 
-## Key Concepts
+This property controls how multiple lines of flex items are distributed along the cross-axis when there's extra space. In your column-direction layout:
 
-▸ **Cross-Axis Alignment**  
-The `align-items` property controls vertical positioning in row-direction containers (or horizontal in column-direction).
+### Key Behaviors Observed
+- **Right-Aligned Columns**  
+  All wrapped columns stack tightly against the container's right edge
 
-▸ **Container-Level Control**  
-Alignment rules are defined once on the parent container but apply to all direct children.
+- **Space Distribution**  
+  Any remaining vertical space appears at the top of the container
 
-▸ **Visual Consistency**  
-Creates orderly layouts even with items of varying heights/sizes.
+- **Wrap Dependency**  
+  Only affects layouts where `flex-wrap: wrap` creates multiple lines/columns
 
-
-
-### With `align-items: end`
-- All items snap to the container's bottom edge
-- Tallest item defines the row's baseline
-- Creates a clean "floor" effect
-- Particularly useful for footers and bottom-anchored UI
+### Comparison to Other Values
+| Value          | Column Direction Effect       |
+|----------------|-------------------------------|
+| `flex-start`   | Columns pack to left (default)|
+| `flex-end`     | Columns pack to right         |
+| `center`       | Columns group in middle       |
+| `space-between`| Equal spacing between columns |
+| `space-around` | Equal spacing around columns  |
 
 
 
