@@ -1,29 +1,30 @@
 <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; border: 1px solid #ddd; font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;">
 
-# Flexbox `align-content`
+# Flexbox `align-content` 
 
-## Understanding `align-content: flex-end`
+The `align-content` property in CSS controls how browsers distribute space between and around flex items along the cross-axis when there's extra space in multi-line flex containers.
 
-This property controls how multiple lines of flex items are distributed along the cross-axis when there's extra space. In your column-direction layout:
+## Core Functionality
+- **Cross-Axis Management**: Operates perpendicular to your `flex-direction`
+- **Multi-Line Requirement**: Only affects layouts with `flex-wrap: wrap` or `wrap-reverse`
+- **Space Distribution**: Determines how remaining space is allocated between lines
 
-### Key Behaviors Observed
-- **Right-Aligned Columns**  
-  All wrapped columns stack tightly against the container's right edge
+## Value Reference Guide
 
-- **Space Distribution**  
-  Any remaining vertical space appears at the top of the container
+### Basic Alignment
+- `stretch` (default): Lines expand to fill available space
+- `flex-start`: Groups lines at container's start
+- `flex-end`: Packs lines at container's end
+- `center`: Centers all lines together
 
-- **Wrap Dependency**  
-  Only affects layouts where `flex-wrap: wrap` creates multiple lines/columns
+### Space Distribution
+- `space-between`:  
+  First line at start, last at end, equal spacing between
+- `space-around`:  
+  Equal spacing around each line (half-space at edges)
+- `space-evenly`:  
+  Equal spacing around and between all lines
 
-### Comparison to Other Values
-| Value          | Column Direction Effect       |
-|----------------|-------------------------------|
-| `flex-start`   | Columns pack to left (default)|
-| `flex-end`     | Columns pack to right         |
-| `center`       | Columns group in middle       |
-| `space-between`| Equal spacing between columns |
-| `space-around` | Equal spacing around columns  |
 
 
 
