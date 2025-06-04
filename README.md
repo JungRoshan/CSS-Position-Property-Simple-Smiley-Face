@@ -1,34 +1,22 @@
-<div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; border: 1px solid #ddd; font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto;">
+<div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; border: 1px solid #ddd; font-family: Arial, sans-serif;">
 
-# Flexbox `align-content` 
+# CSS Flexbox Practiced 
 
-The `align-content` property in CSS controls how browsers distribute space between and around flex items along the cross-axis when there's extra space in multi-line flex containers.
+practiced two distinct Flexbox implementations: a wrapped grid container and a navigation bar, focusing on different alignment approaches.
 
-## Core Functionality
-- **Cross-Axis Management**: Operates perpendicular to your `flex-direction`
-- **Multi-Line Requirement**: Only affects layouts with `flex-wrap: wrap` or `wrap-reverse`
-- **Space Distribution**: Determines how remaining space is allocated between lines
+## What I Practiced
 
-## Value Reference Guide
+### 1. Wrapped Grid Container
+- Created a 400px square flex container with 9 boxes
+- Used `flex-wrap: wrap` for responsive line breaks
+- Applied `justify-content: space-evenly` for balanced spacing
+- Centered items vertically with `align-items: center`
+- Maintained consistent 100px square dimensions for all boxes
 
-### Basic Alignment
-- `stretch` (default): Lines expand to fill available space
-- `flex-start`: Groups lines at container's start
-- `flex-end`: Packs lines at container's end
-- `center`: Centers all lines together
-
-### Space Distribution
-- `space-between`:  
-  First line at start, last at end, equal spacing between
-- `space-around`:  
-  Equal spacing around each line (half-space at edges)
-- `space-evenly`:  
-  Equal spacing around and between all lines
-
-
-
-
-
-
-
+### 2. Navigation Bar
+- Built a 900px horizontal navigation bar
+- Implemented `justify-content: flex-start` for left alignment
+- Used `line-height` for perfect vertical text centering
+- Added margin between navigation options
+- Styled with pink background and rounded corners
 
