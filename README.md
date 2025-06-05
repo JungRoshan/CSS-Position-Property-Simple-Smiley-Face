@@ -1,22 +1,34 @@
 <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; border: 1px solid #ddd; font-family: Arial, sans-serif;">
 
-# CSS Flexbox Practiced 
+# CSS Grid Playground 
 
-practiced two distinct Flexbox implementations: a wrapped grid container and a navigation bar, focusing on different alignment approaches.
+practiced advanced CSS Grid techniques, focusing on grid template definitions and item placement within containers.
 
 ## What I Practiced
 
-### 1. Wrapped Grid Container
-- Created a 400px square flex container with 9 boxes
-- Used `flex-wrap: wrap` for responsive line breaks
-- Applied `justify-content: space-evenly` for balanced spacing
-- Centered items vertically with `align-items: center`
-- Maintained consistent 100px square dimensions for all boxes
+- Created a black container (600px × 300px) with grid display
+- Experimented with `grid-template-columns` using both explicit and repeat() notation
+- Implemented 100px gaps between rows and columns
+- Centered items horizontally with `justify-items: center`
+- Practiced item spanning across grid columns
+- Styled grid items with green background and centered text
 
-### 2. Navigation Bar
-- Built a 900px horizontal navigation bar
-- Implemented `justify-content: flex-start` for left alignment
-- Used `line-height` for perfect vertical text centering
-- Added margin between navigation options
-- Styled with pink background and rounded corners
+
+### Container Properties
+- **Dimensions**: 600px width × 300px height
+- **Background**: #000000 (black)
+- **Display**: `display: grid`
+- **Columns**: Alternated between 3-column and 4-column layouts
+- **Gaps**: 100px row-gap and column-gap
+- **Alignment**: Center-aligned items both horizontally and vertically
+
+
+
+## Key Observations
+
+- Grid template definitions determine the structural layout
+- Gaps create visual separation without margins
+- Item spanning allows creating complex layouts
+- Centering works differently in Grid vs Flexbox
+- Explicit column widths vs fractional units behave differently
 
