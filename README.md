@@ -1,6 +1,6 @@
 <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; border: 1px solid #ddd; font-family: Arial, sans-serif;">
 
-# CSS Animations Playground - Day [X]
+# CSS Animations Playground 
 
 Explored CSS animations, focusing on keyframe animations and animation properties through practical implementation.
 
