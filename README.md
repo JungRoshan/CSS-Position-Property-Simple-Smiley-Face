@@ -1,34 +1,43 @@
 <div style="background-color: #f5f5f5; padding: 20px; border-radius: 8px; border: 1px solid #ddd; font-family: Arial, sans-serif;">
 
-# CSS Grid Playground 
+# CSS Animations Playground - Day [X]
 
-practiced advanced CSS Grid techniques, focusing on grid template definitions and item placement within containers.
+Explored CSS animations, focusing on keyframe animations and animation properties through practical implementation.
 
 ## What I Practiced
 
-- Created a black container (600px × 300px) with grid display
-- Experimented with `grid-template-columns` using both explicit and repeat() notation
-- Implemented 100px gaps between rows and columns
-- Centered items horizontally with `justify-items: center`
-- Practiced item spanning across grid columns
-- Styled grid items with green background and centered text
+### Animation Implementation
+- Created a pink box (400px × 80px) with color animation
+- Defined `@keyframes` for both color and font-size animations
+- Applied animation using individual properties:
+  - `animation-name: coloranimate`
+  - `animation-duration: 2s`
+  - `animation-timing-function: ease-in`
+  - `animation-delay: 0`
+  - `animation-iteration-count: 8`
+  - `animation-direction: alternate`
+- Experimented with animation shorthand property
 
-
-### Container Properties
-- **Dimensions**: 600px width × 300px height
-- **Background**: #000000 (black)
-- **Display**: `display: grid`
-- **Columns**: Alternated between 3-column and 4-column layouts
-- **Gaps**: 100px row-gap and column-gap
-- **Alignment**: Center-aligned items both horizontally and vertically
-
-
+### Keyframe Definitions
+- **Color Animation**: 
+  - Smooth transition from green to blue
+  - Alternate direction for continuous effect
+- **Font Animation** (defined but not applied):
+  - Extreme size change from 20px to 6000px
+  - Demonstrates transform potential
 
 ## Key Observations
 
-- Grid template definitions determine the structural layout
-- Gaps create visual separation without margins
-- Item spanning allows creating complex layouts
-- Centering works differently in Grid vs Flexbox
-- Explicit column widths vs fractional units behave differently
+1. **Timing Control**: 
+   - `ease-in` creates smooth acceleration
+   - 2s duration provides visible transition
+   - 8 iterations with alternate direction creates ping-pong effect
+
+2. **Performance**:
+   - Color animations are GPU-accelerated
+   - Minimal repaint operations during transition
+
+3. **Shorthand Advantage**:
+   - Compact syntax: `animation: name duration timing-function delay iteration-count direction`
+
 
